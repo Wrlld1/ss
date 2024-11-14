@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #A50034; /* FC Barcelona color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Растягиваем фон сектора на весь экран */
+#home {
+    background-image: url('/static/img/pexels-eugeniofr-17070702.jpg'); /* Укажите путь к вашей картинке */
+    background-size: cover; /* Растягиваем картинку на весь элемент */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Выровнять весь контент по правой стороне */
+    color: white;
+    padding: 20px; /* Отступы */
+    text-align: right; /* Выравниваем текст внутри элементов по правой стороне */
+}
+
+#bb, #mm {
+    max-width: 50%; /* Ограничиваем ширину текста */
+    font-size: 1.5rem; /* Размер шрифта */
+}
+/* Анимация появления текста */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+
+
+/* Стиль для заголовков и текста внутри сектора */
+#home h2, #home p {
+    font-size: 2rem; /* Размер шрифта для текста */
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    max-width: 800px; /* Максимальная ширина текста */
+    
+}
+
+/* Дополнительный стиль для того, чтобы текст был более читаемым на фоне */
+#home {
+    background-color: white; /* Полупрозрачный черный фон для улучшения читаемости */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #A50034; /* FC Barcelona color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
